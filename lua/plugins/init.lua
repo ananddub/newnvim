@@ -1,19 +1,19 @@
 return {
-  {
-    "stevearc/conform.nvim",
-    -- event = 'BufWritePre', -- uncomment for format on save
-    opts = require "configs.conform",
-  },
+    {
+        "stevearc/conform.nvim",
+        opts = require "configs.conform",
+    },
 
-  {
-    "neovim/nvim-lspconfig",
-    config = function()
-      require "configs.lspconfig"
-    end,
-  },
+    {
+        "neovim/nvim-lspconfig",
+        config = function()
+            require "configs.lspconfig"
+        end,
+    },
 
-  { "nvchad/volt", lazy = true },
-  {
+    { "nvchad/volt", lazy = true },
+
+    {
         "williamboman/mason.nvim",
         opts = {
             ensure_installed = {
@@ -29,15 +29,18 @@ return {
             },
         },
     },
-    
-    
-    
+
+
+
     { "terrortylor/nvim-comment" },
+
     { "mfussenegger/nvim-dap" },
+
     {
         'kevinhwang91/nvim-ufo',
         requires = 'kevinhwang91/promise-async'
     },
+
     { 'wbthomason/packer.nvim' },
-    
+
 }
