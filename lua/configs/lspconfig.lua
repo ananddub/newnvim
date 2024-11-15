@@ -5,11 +5,10 @@ local on_init = require("nvchad.configs.lspconfig").on_init
 local capabilities = require("nvchad.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
-local servers = { "html", "cssls" }
 local lspconfig = require "lspconfig"
 
 -- EXAMPLE
-local servers = { "html", "cssls", "ts_ls" }
+local servers = { "html", "cssls", "ts_ls","gopls" }
 local nvlsp = require "nvchad.configs.lspconfig"
 
 -- lsps with default config
@@ -143,6 +142,7 @@ require("flutter-tools").setup {
     },
 
 }
+
 
 
 

@@ -23,6 +23,7 @@ return {
                 "typescript-language-server",
                 "stylua",
                 "clangd",
+                "gopls",
                 "html-lsp",
                 "css-lsp",
                 "prettierd",

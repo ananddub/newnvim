@@ -8,7 +8,7 @@ local opts = { noremap = true, silent = true }
 
 map("i", "jk", "<ESC>")
 
-map("n",'<C-i>',"<cmd>Huefy<cr>")
+-- map("n",'<C-i>',"<cmd>Huefy<cr>")
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 --
 ---- Keyboard users
@@ -118,6 +118,8 @@ function Run_current_file()
         cmd = "rustc " .. fullname
     elseif filetype == "java" then
         cmd = "javac " .. fullname .. " && java " .. filename
+    elseif filetype == "go" then
+        cmd = "go run " .. fullname
     else
         print("Unsupported filetype: " .. filetype)
         return
