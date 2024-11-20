@@ -115,7 +115,7 @@ function Run_current_file()
     elseif filetype == "cpp" then
         cmd = "g++ " .. fullname .. " -o " .. filename .. ".out" .. " && ./" .. filename .. ".out"
     elseif filetype == "rust" then
-        cmd = "rustc " .. fullname
+        cmd = "cargo run " 
     elseif filetype == "java" then
         cmd = "javac " .. fullname .. " && java " .. filename
     elseif filetype == "go" then
